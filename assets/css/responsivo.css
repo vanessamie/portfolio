@@ -14,15 +14,88 @@
     .wrapper {
         width: min(768px, 100%);
     }
-
+    
     body.menu-expanded > :not(nav) {
         visibility: transparent;
     }
-
+    
     body.menu-expanded .menu {
         width: 60%;
         margin-left: 40%;
         border-radius: 0 0 0 5rem;
     }
     
+}
+
+/*----- TABLET -----*/
+@media screen and (min-width: 1024px) {
+    /*----- GERAL -----*/   
+    body {
+        overflow: auto;
+    }
+
+    #navegacao .wrapper {
+        display: flex;
+        flex-direction: row;
+        background: var(--background);
+    }
+
+    .wrapper {
+        width: min(112rem, 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*----- RESET -----*/
+    #navegacao .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        transform: initial;
+    }
+
+    #navegacao .close-menu,
+    #navegacao .open-menu {
+        display: none;
+    }
+    
+    /*----- MENU -----*/
+    #navegacao .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    #navegacao .wrapper .menu i {
+        display: none;
+    }
+    
+    #navegacao .menu li a.active::after,
+    #navegacao .menu li a:hover::after {
+        padding-inline: 0.8rem;
+        width: 100%;
+    }
+    
+    #navegacao .menu li a {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--nav-color);
+        display: inline;
+        padding: 1rem;
+    }
+    
+    #navegacao .menu li a.active,
+    #navegacao .menu li a:hover,
+    .nome {
+        background-image: linear-gradient(to left, var(--nav-color), var(--items));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
 }

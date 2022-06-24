@@ -87,6 +87,7 @@ body.menu-expanded .close-menu {
 
 .wrapper button {
     transform: scale(2);
+    color: var(--nav-color);
     background-color: transparent;
     border: none;
 }
@@ -100,4 +101,8 @@ body.menu-expanded .close-menu {
     font-weight: 700;
     color: var(--nav-color);
     margin-left: 1rem;
+}
+
+.nome {
+    color: var(--nav-color);
 }
