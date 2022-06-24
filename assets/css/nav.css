@@ -1,0 +1,304 @@
+/*----- NAV -----*/
+@media screen and (max-width: 1024px) {
+    
+    #navegacao {
+        height: var(--nav-height);
+        display: flex;
+        background-color: var(--background);
+        position: fixed; 
+        top: 0;
+        z-index: 100;
+        left: 0;
+    }
+
+    #navegacao > .wrapper {
+        position: inherit;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav.scroll .logo {
+        color: var(--nav-bar);
+    }
+
+    nav.scroll .open-menu {
+        filter: invert(100%) saturate(0%) brightness(200%);
+    }
+
+    /*----- MENU EXPANDED -----*/
+    body.menu-expanded {
+        overflow: hidden; /*Remove todo o scroll*/
+    }
+
+    .menu {
+        transform: translateY(100%);
+    }
+
+    body.menu-expanded .menu {
+        position: fixed;
+        
+        background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
+
+        padding-top: var(--nav-height);
+        
+        transform: translateY(0);
+        animation: animate 1s alternate-reverse;
+    }
+
+    @keyframes animate{
+        to{
+        transform: translateX(90%);
+        }
+    }
+
+    body.menu-expanded > :not(nav) {
+        visibility: transparent;
+    }
+
+    .menu,
+    .close-menu,
+    body.menu-expanded .open-menu {
+        display: none;
+        visibility: hidden;
+    }
+
+    body.menu-expanded .menu,
+    body.menu-expanded .close-menu {
+        display: block;
+        visibility: visible;
+    }
+
+    .close-menu {
+        position: relative;
+        z-index: 100;
+        color: var(--background);
+    }
+
+    .menu li {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    .menu li a {
+        display: flex;
+        flex-direction: column;
+    
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--nav-color);
+    }
+
+    .wrapper button {
+        background: none;
+        border: none;
+    }
+
+    .fa-heart-pulse,
+    .fa-x,
+    .fa-jedi,
+    .fa-code,
+    .fa-hand-spock,
+    .fa-hard-drive,
+    .fa-rocket,
+    .fa-tablet-screen-button {
+        color: var(--nav-color);
+        margin-right: 2rem;
+    }
+
+    .fa-heart-pulse,
+    .fa-x {
+        transform: scale(2);
+    }
+
+    .nome {
+        color: var(--nav-color);
+    }
+}
+
+/*----- CELULARES PEQUENOS -----*/
+@media screen and (min-width: 0) {
+    #navegacao > .wrapper {
+        font-size: 1rem;
+    }
+
+    body.menu-expanded .menu {
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        right: 0;
+    }
+
+    .menu li a {
+        display: flex;
+        flex-direction: column;
+       
+        text-decoration: none;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--nav-items);
+    }
+
+    .menu li {
+        margin-top: .5rem;
+    }
+
+    .fa-heart-pulse,
+    .fa-x,
+    .fa-jedi,
+    .fa-code,
+    .fa-hand-spock,
+    .fa-hard-drive,
+    .fa-rocket,
+    .fa-tablet-screen-button {
+        transform: scale(1.5);
+    }
+
+    .nome {
+        margin-top: 0.5rem;
+    }
+}
+
+/*----- SMARTPHONES -----*/
+@media screen and (min-width: 280px) {
+    #navegacao > .wrapper {
+        font-size: 1.2rem;
+    }
+
+    .menu li {
+        margin-top: 3rem;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    #navegacao > .wrapper {
+        font-size: 1.5rem;
+    }
+
+    .menu li a {
+        font-size: 2.3rem;
+    }
+
+    .fa-heart-pulse,
+    .fa-x,
+    .fa-jedi,
+    .fa-code,
+    .fa-hand-spock,
+    .fa-hard-drive,
+    .fa-rocket,
+    .fa-tablet-screen-button {
+        transform: scale(2);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navegacao > .wrapper {
+        font-size: 2rem;
+    }
+
+    body.menu-expanded .menu {
+        width: 60%;
+        height: 100%;
+        border-radius: 0 0 0 5rem;
+    }
+
+    .menu li {
+        margin-top: 4rem;
+    }
+
+    .menu li a {
+        font-size: 3rem;
+    }
+
+    .nome {
+        margin-top: 0;
+    }
+}
+
+
+/*----- NOTEBOOK -----*/
+@media screen and (min-width: 769px) { 
+    /*----- CONTATO -----*/
+
+    .input-container {
+        width: 30rem;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .input__label::before {
+        content: '';
+        height: .5rem;
+        background: white;
+        position: absolute;
+        left: 0;
+        top: 1rem;
+        width: 100%;
+        z-index: -1;
+    }
+    .input__label {
+        position: absolute;
+        left: 1rem;
+        top: 1.4rem;
+        transition: all .2s;
+        z-index: 1;
+        color: #f53353;
+        font-size: 1.8rem;
+        user-select: none;
+    }
+
+    .input__text {
+        padding: .8rem;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #2f2c45;
+        background: white;
+        border-radius: .5rem;
+        font-size: 2rem;
+        outline: none;
+        transition: all .3s;
+        color: #f53353;
+    }
+
+
+    .input__text:focus {
+        border: 2px solid #2f2c45;
+    }
+
+    .input__text:focus + .input__label {
+        top: -1rem;
+        color: #f53353;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-shadow: 15px 1px 2px rgba(8, 8, 8, 0.493);
+        z-index: 100;
+    }
+
+    .input__text::placeholder {
+        font-size: 2rem;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    .input__text:not(:placeholder-shown) + .input__label {
+        top: -1rem;
+        color: #f53353;
+        font-size: 18;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+
+
+}

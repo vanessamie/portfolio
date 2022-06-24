@@ -1,0 +1,36 @@
+/*----- SOBRE MIM -----*/
+#home {
+    padding-inline: 10%;
+}
+
+.home__sobre {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre__foto {
+    margin-top: 3rem;
+    width: 50%;
+    align-self: center;
+    border-radius: 50% 75%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+p {
+    margin: 0.5rem;
+}
