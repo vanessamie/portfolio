@@ -1,15 +1,47 @@
 /*----- SMARTPHONE -----*/
 /*----- MENU EXPANSÍVEL -----*/
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 500px) {
+    #navegacao > .wrapper {
+        background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
+    }
     body.menu-expanded .menu {
         width: 100vw;
     }
+
+    body.menu-expanded > :not(nav) {
+        visibility: hidden;
+    }
+    /*----- HOME -----*/
+    .sobre__foto {
+        width: 50%;
+
+    }
+    
 }
+
+@media screen and (min-width: 501px) {
+    #navegacao > .wrapper {
+        background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
+    }
+    body.menu-expanded .menu {
+        width: 60%;
+        border-radius: 0 0 0 5rem;
+    }
+    /*----- HOME -----*/
+    .sobre__foto {
+        width: 25%;
+    }
+    
+} 
 
 
 /*----- TABLET -----*/
 /*----- MENU EXPANSÍVEL -----*/
 @media screen and (min-width: 768px) {   
+    #navegacao > .wrapper {
+        background: var(--background);
+    }
+
     .wrapper {
         width: min(768px, 100%);
     }
@@ -17,30 +49,52 @@
     body.menu-expanded > :not(nav) {
         visibility: transparent;
     }
-    
-    body.menu-expanded .menu {
-        width: 60%;
-        margin-left: 40%;
-        border-radius: 0 0 0 5rem;
+
+    .nome,
+    .fa-heart-pulse {
+        background-image: linear-gradient(to right, var(--nav-bar1), var(--color));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
+
+        .nome {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    
+    
+    /*----- HOME -----*/
+    .home__sobre {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sobre__foto {
+        width: 25%;
+    }
+
+    .sobre__titulo {
+        width: 40%;
+    }
+   
     
 }
 
 /*----- NOTEBOOK -----*/
-/*----- MENU EXPANSÍVEL -----*/
-
 @media screen and (min-width: 1024px) {
     /*----- GERAL -----*/   
     body {
         overflow: auto;
     }
-
+    
     #navegacao .wrapper {
         display: flex;
         flex-direction: row;
-        background: var(--background);
     }
-
+    
     .wrapper {
         width: min(112rem, 100%);
         display: flex;
@@ -48,7 +102,7 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     /*----- RESET -----*/
     #navegacao .wrapper * {
         margin: 0;
@@ -56,7 +110,7 @@
         visibility: initial;
         transform: initial;
     }
-
+    
     #navegacao .close-menu,
     #navegacao .open-menu {
         display: none;
@@ -83,15 +137,14 @@
     #navegacao .menu li a {
         font-size: 1.8rem;
         font-weight: 400;
-        color: var(--nav-color);
+        color: var(--color);
         display: inline;
         padding: 1rem;
     }
     
     #navegacao .menu li a.active,
-    #navegacao .menu li a:hover,
-    .nome {
-        background-image: linear-gradient(to left, var(--nav-color), var(--items));
+    #navegacao .menu li a:hover {
+        background-image: linear-gradient(to left, var(--nav-bar1), var(--color));
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;

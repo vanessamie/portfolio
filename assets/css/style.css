@@ -3,13 +3,10 @@
     --font-family: 'Libre Baskerville', serif;
     font-size: 62.5%;
 
-
-    --background: hsl(234, 99%, 72%);
-    --color: hsl(277, 100%, 48%);
-    --items: hsl(345, 92%, 51%);
+    --background: hsl(277, 100%, 48%);
     --nav-bar1: hsl(271, 79%, 15%);
     --nav-bar2: hsl(167, 81%, 29%);
-    --nav-color: hsl(0, 27%, 94%);
+    --color: hsl(0, 12%, 89%);
 
 
     --nav-height: 4rem;
