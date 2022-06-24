@@ -1,15 +1,14 @@
-/*----- MENU EXPANSÍVEL -----*/
 /*----- SMARTPHONE -----*/
+/*----- MENU EXPANSÍVEL -----*/
 @media screen and (max-width: 60rem) {
     body.menu-expanded .menu {
         width: 100vw;
     }
-    
 }
 
 
 /*----- TABLET -----*/
-
+/*----- MENU EXPANSÍVEL -----*/
 @media screen and (min-width: 768px) {   
     .wrapper {
         width: min(768px, 100%);
@@ -27,7 +26,9 @@
     
 }
 
-/*----- TABLET -----*/
+/*----- NOTEBOOK -----*/
+/*----- MENU EXPANSÍVEL -----*/
+
 @media screen and (min-width: 1024px) {
     /*----- GERAL -----*/   
     body {
