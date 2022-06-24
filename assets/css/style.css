@@ -1,12 +1,12 @@
 /*----- PADRAO -----*/
 :root {
     --font-family: 'Libre Baskerville', serif;
-
+    font-size: 62.5%;
 
 
     --background: hsl(234, 99%, 72%);
     --color: hsl(277, 100%, 48%);
-    --nav-items: hsl(345, 92%, 51%);
+    --items: hsl(345, 92%, 51%);
     --nav-bar1: hsl(271, 79%, 15%);
     --nav-bar2: hsl(167, 81%, 29%);
     --nav-color: rgb(243, 234, 234);
@@ -15,13 +15,33 @@
     --nav-height: 4rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+html,
 body {
-    width: max(800px, 100%);
+    width: 100%;
     height: 100vh;
+}
+
+body {
     background-color: var(--background);
     color: var(--color);
     font-family: var(--font-family);
+    font-size: 1.6rem;
+    text-align: center;
+    overflow: overlay;
 }
+
+.wrapper {
+    width: min(820px, 100%);
+    margin-inline: auto;
+}
+
+section {
+    padding-block: 10rem;
+}
+
 
 
 

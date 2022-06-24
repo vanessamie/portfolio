@@ -1,0 +1,28 @@
+/*----- MENU EXPANSÍVEL -----*/
+/*----- SMARTPHONE -----*/
+@media screen and (max-width: 60rem) {
+    body.menu-expanded .menu {
+        width: 100vw;
+    }
+    
+}
+
+
+/*----- TABLET -----*/
+
+@media screen and (min-width: 768px) {   
+    .wrapper {
+        width: min(768px, 100%);
+    }
+
+    body.menu-expanded > :not(nav) {
+        visibility: transparent;
+    }
+
+    body.menu-expanded .menu {
+        width: 60%;
+        margin-left: 40%;
+        border-radius: 0 0 0 5rem;
+    }
+    
+}
