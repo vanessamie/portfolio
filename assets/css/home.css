@@ -22,4 +22,21 @@
 .home__sobre {
     display: flex;
     flex-direction: column;
+    letter-spacing: 0.2rem;
+    margin-top: 4rem;
+}
+
+.sobre__titulo,
+.sobre__sobre {
+    line-height: 4rem;
+}
+
+.sobre__sobre > h2,
+.sobre__sobre > p {
+    margin: 3rem;
+}
+
+.dev {
+    letter-spacing: 0.2rem;
+    filter: brightness(1.3);
 }

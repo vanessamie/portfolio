@@ -1,5 +1,7 @@
 /*----- CONTATO -----*/
-
+.input {
+    caret-color: #f53353;
+}
 .input-container {
     width: 25rem;
     position: relative;
