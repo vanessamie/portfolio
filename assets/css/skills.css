@@ -1,0 +1,64 @@
+/*----- HARD SKILLS -----*/  
+#hard {
+    padding-left: 1rem;
+    margin-top: 10rem;
+} 
+.hard__skills h2 {
+    margin-top: 3rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.hard__skills h3 {
+    text-align: start;
+    margin-top: 5rem;
+    letter-spacing: 0.1rem;
+}
+
+.hard__desenvolvidas,
+.hard__desenvolvendo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.hard__desenvolvidas img,
+.hard__desenvolvendo img {
+    width: 80px;
+}
+
+/*----- HOBBIES -----*/
+#hobbies {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: ;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.hobbies__hobbies{
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.hobbies__hobbies li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.hobbies__hobbies img,
+.hobbies__hobbies svg {
+    fill: var(--nav-bar2);
+    margin-bottom: 1rem;
+}

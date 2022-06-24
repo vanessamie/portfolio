@@ -12,8 +12,6 @@
         visibility: hidden;
     }
     /*----- HOME -----*/
-
-
     .sobre__foto {
         margin-top: 0;
         width: 50%;
@@ -29,6 +27,7 @@
         background: linear-gradient(120deg, var(--nav-bar1), 30%, var(--background));
         padding: 3rem 0;
     }
+
     /*----- SOCIAL-LINKS -----*/
     .social-links {
         width: 100%;
@@ -42,7 +41,15 @@
     .container {
         width: 100%;
     }
-
+    /*----- HOBBIES -----*/
+    .hobbies__hobbies li {
+        width: 50%;
+    }
+    
+    .hobbies__hobbies img,
+    .hobbies__hobbies svg {
+        width: 40%;
+    }
     
 }
 
@@ -70,6 +77,16 @@
         margin-top: 10rem;
         background: linear-gradient(120deg, var(--nav-bar1), 30%, var(--background));
         padding: 3rem 0;
+    }
+
+    /*----- HOBBIES -----*/
+    .hobbies__hobbies li {
+        width: 50%;
+    }
+    
+    .hobbies__hobbies img,
+    .hobbies__hobbies svg {
+        width: 40%;
     }
 
     
@@ -129,6 +146,16 @@
         font-size: 2rem;
         margin-top: 5rem;
         background: linear-gradient(0deg, var(--nav-bar1), 1%, var(--background));
+    }
+
+    /*----- HOBBIES -----*/
+    .hobbies__hobbies li {
+        width: 25%;
+    }
+    
+    .hobbies__hobbies img,
+    .hobbies__hobbies svg {
+        width: 25%;
     }
     
 }
