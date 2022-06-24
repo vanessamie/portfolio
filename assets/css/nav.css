@@ -18,10 +18,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-    }
-
-    nav.scroll .logo {
-        color: var(--nav-bar);
+        background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
     }
 
     nav.scroll .open-menu {
@@ -134,18 +131,11 @@
         right: 0;
     }
 
-    .menu li a {
-        display: flex;
-        flex-direction: column;
-       
-        text-decoration: none;
-        font-size: 1.6rem;
-        font-weight: 700;
-        color: var(--nav-items);
-    }
-
     .menu li {
         margin-top: .5rem;
+    }
+    .menu li a {
+        font-size: 1.6rem;
     }
 
     .fa-heart-pulse,
@@ -170,12 +160,12 @@
         font-size: 1.2rem;
     }
 
-    .menu li {
-        margin-top: 3rem;
+    body.menu.expanded .menu {
+        padding-top: calc(var(--nav-height) + 3rem);
     }
 
-    .menu li a {
-        font-size: 2rem;
+    .menu li {
+        margin-top: 3rem;
     }
 
 }
@@ -183,10 +173,6 @@
 @media screen and (min-width: 375px) {
     #navegacao > .wrapper {
         font-size: 1.5rem;
-    }
-
-    .menu li a {
-        font-size: 2.3rem;
     }
 
     .fa-heart-pulse,
@@ -216,18 +202,9 @@
         margin-top: 4rem;
     }
 
-    .menu li a {
-        font-size: 3rem;
-    }
-
     .nome {
         margin-top: 0;
     }
-}
-
-
-/*----- NOTEBOOK -----*/
-@media screen and (min-width: 769px) { 
     /*----- CONTATO -----*/
 
     .input-container {
@@ -298,7 +275,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    
+
 
 
 }
