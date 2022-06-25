@@ -160,6 +160,25 @@
 }
 
 /*----- NOTEBOOK -----*/
+@media screen and (min-width: 992px) {   
+    #navegacao > .wrapper {
+        background: var(--background);
+    }
+
+    .wrapper {
+        width: min(992px, 100%);
+    }
+
+    /*----- PROJETOS -----*/   
+    #projetos .wrapper {
+        width: 80%;
+    }
+    
+    
+
+}
+    
+/*----- NOTEBOOK -----*/
 @media screen and (min-width: 1024px) {
     /*----- GERAL -----*/   
     body {
@@ -228,10 +247,10 @@
         font-weight: 700;
     }
 
-        /*----- BACK TO TOP -----*/ 
-        #backToTopButton {
-            bottom: 5%;
-            right: 5%;
-        }
+    /*----- BACK TO TOP -----*/ 
+    #backToTopButton {
+        bottom: 5%;
+        right: 5%;
+    }
 
 }
