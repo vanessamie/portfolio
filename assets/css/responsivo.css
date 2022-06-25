@@ -46,6 +46,11 @@
         width: 50%;
     }
 
+    /*----- BACK TO TOP -----*/ 
+    #backToTopButton {
+        bottom: 1%;
+        right: 1%;
+    }
     
 }
 
@@ -79,7 +84,12 @@
     .hobbies__hobbies li {
         width: 50%;
     }
-
+    
+    /*----- BACK TO TOP -----*/ 
+    #backToTopButton {
+        bottom: 3%;
+        right: 3%;
+    }
 
     
 } 
@@ -144,6 +154,8 @@
     .hobbies__hobbies li {
         width: 25%;
     }
+
+
 
 }
 
@@ -215,5 +227,11 @@
         font-size: 2rem;
         font-weight: 700;
     }
+
+        /*----- BACK TO TOP -----*/ 
+        #backToTopButton {
+            bottom: 5%;
+            right: 5%;
+        }
 
 }

@@ -6,9 +6,11 @@ function onScroll() {
     backToTopButtonOnScroll()
 
     activateMenuAtCurrentSection(home)
-    activateMenuAtCurrentSection(services)
-    activateMenuAtCurrentSection(about)
-    activateMenuAtCurrentSection(contact)
+    activateMenuAtCurrentSection(hard)
+    activateMenuAtCurrentSection(hobbies)
+    activateMenuAtCurrentSection(projetos)
+    activateMenuAtCurrentSection(formacao)
+    activateMenuAtCurrentSection(contato)
 }
 
 //Função para deixar a opção do menu ativa conforme scroll na página.
@@ -42,14 +44,13 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
-    let navigation = document.getElementById('navigation')
+    let navigation = document.getElementById('navegacao')
     
     if (scrollY > 0) {
         navigation.classList.add('scroll')
     } else {
         navigation.classList.remove('scroll')
     } 
-
 }
 
 function backToTopButtonOnScroll() {
@@ -59,12 +60,11 @@ function backToTopButtonOnScroll() {
         backToTopButton.classList.add('show')
     } else {
         backToTopButton.classList.remove('show')
-    } 
-
-
+    }
 }
+console.log(backToTopButtonOnScroll());
 
-
+//abrir e fechar o menu expansível
 function openMenu() {
     document.body.classList.add('menu-expanded')
 }
@@ -73,19 +73,16 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
+
 ScrollReveal({
     origin:'top',
     distance: '30px',
     duration: 700,
 }).reveal(`
-#home, 
-#home .img, 
-#home .stats, 
-#services,
-#services header,
-#services .card,
-#about,
-#about header,
-#about .content,
-#contact header,
-#contact`)
+#home,  
+#hard,
+#hobbies,
+#projetos,
+#formacao,
+#contato
+`)

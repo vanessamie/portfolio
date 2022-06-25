@@ -45,8 +45,6 @@ section {
 
 }
 
-
-
 /*----- SOCIAL-LINKS -----*/   
 .fa-instagram,
 .fa-github,
@@ -136,3 +134,29 @@ span {
     transform: scale(1.2);
 }
 
+/*----- BACK TO TOP -----*/ 
+#backToTopButton {
+    position: fixed;
+    
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: translateY(100%);
+    transition: .2s;
+}
+
+#backToTopButton img {
+    width: 5rem;
+    height: 4rem;
+}
+
+#backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTopButton:hover{
+    transform: scale(1.3);
+    filter: brightness(1.3);
+}
