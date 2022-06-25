@@ -1,0 +1,36 @@
+/*----- PROJETOS -----*/
+#projetos {
+    width: 100vw;
+    margin-top: var(--nav-height);
+    padding: 0;
+}
+
+#projetos .wrapper {
+    width: 90%;
+    margin-inline: auto;
+}
+.projetos__projetos {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    line-height: var(--nav-height);
+}
+
+.projetos__imagem {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.projetos__links {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 2rem 0;
+}
+
+#projetos .wrapper > p {
+    margin: var(--nav-height) 0;
+}

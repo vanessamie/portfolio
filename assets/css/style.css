@@ -37,7 +37,7 @@ body {
 }
 
 section {
-    padding-block: 10rem;
+    padding-block: 10rem 0;
 }
 
 .nome {
