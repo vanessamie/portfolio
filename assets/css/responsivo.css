@@ -45,11 +45,7 @@
     .hobbies__hobbies li {
         width: 50%;
     }
-    
-    .hobbies__hobbies img,
-    .hobbies__hobbies svg {
-        width: 40%;
-    }
+
     
 }
 
@@ -83,11 +79,7 @@
     .hobbies__hobbies li {
         width: 50%;
     }
-    
-    .hobbies__hobbies img,
-    .hobbies__hobbies svg {
-        width: 40%;
-    }
+
 
     
 } 
@@ -152,12 +144,7 @@
     .hobbies__hobbies li {
         width: 25%;
     }
-    
-    .hobbies__hobbies img,
-    .hobbies__hobbies svg {
-        width: 25%;
-    }
-    
+
 }
 
 /*----- NOTEBOOK -----*/
