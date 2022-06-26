@@ -3,11 +3,12 @@
     --font-family: 'Libre Baskerville', serif;
     font-size: 62.5%;
 
-    --background: hsl(271, 79%, 15%);
-    --nav-bar1: hsl(277, 100%, 48%);
+    --num: 325;
+    --background: hsl(var(--num), 100%, 2%);
+    --color: hsl(var(--num), 20%, 67%);
+    --dark: hsl(var(--num), 23%, 18%);
+    --nav-bar1: hsl(277, 85%, 22%);
     --nav-bar2: hsl(167, 81%, 29%);
-    --color: hsl(0, 12%, 89%);
-    --dark: hsl(240, 23%, 18%);
 
 
     --nav-height: 4rem;
@@ -53,7 +54,7 @@ section {
 .fa-linkedin {
     opacity: 0;
     font-size: 3rem;
-    color: var(--color);
+    color: var(--nav-bar2);
     will-change: transform;
     transform: scale(1.2);
     transition: all .3s ease;
@@ -75,7 +76,7 @@ section {
 
     overflow: hidden;
     cursor: pointer;
-    background-color: var(--background);
+    background-color: var(--nav-bar1);
     border-radius: 8rem;
     will-change: transform;
     transition: all .2s ease-in-out;
@@ -98,10 +99,10 @@ span {
     letter-spacing: .3rem;
     border-radius: 8rem;
 
-    color: var(--dark);
-    background-color: var(--color);
+    color: var(--nav-bar1);
+    background-color: var(--nav-bar2);
     transition: all 1.2s ease;
-    box-shadow: 5px 5px 10px 0 var(--color);
+    box-shadow: 5px 5px 10px 0 var(--nav-bar2);
 }
 
 .container {
