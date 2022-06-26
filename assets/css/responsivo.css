@@ -57,6 +57,9 @@
     }
 
     /*----- HOBBIES -----*/
+    #hobbies {
+        margin-top: 3rem;
+    }
     .hobbies__hobbies li {
         width: 50%;
     }
@@ -65,6 +68,11 @@
     #backToTopButton {
         bottom: 1%;
         right: 1%;
+    }
+
+    /*----- PROJETOS -----*/
+    .projetos__imagem {
+        width: 100%;
     }
 
 
@@ -126,6 +134,10 @@
         right: 3%;
     }
 
+    /*----- PROJETOS -----*/
+    #projetos {
+        margin-top: 10rem;
+    }
 
     
 } 
@@ -135,7 +147,7 @@
 /*----- MENU EXPANSÍVEL -----*/
 @media screen and (min-width: 768px) {   
     #navegacao > .wrapper {
-        width: 100vw;
+        width: 100%;
     }
 
     .wrapper {
@@ -181,7 +193,10 @@
         margin-top: 3rem;
     }
 
-    
+    /*----- PROJETOS -----*/
+    #projetos {
+        margin-top: var(--nav-height);
+    }
 
 
 
@@ -197,7 +212,8 @@
     #navegacao .wrapper {
         display: flex;
         flex-direction: row;
-        width: 100vw;
+        width: 100%;
+        margin: 0;
     }
     
     .wrapper {
@@ -240,7 +256,6 @@
     #navegacao .menu li a.active::after,
     #navegacao .menu li a:hover::after {
         padding-inline: 0.8rem;
-        width: 100%;
     }
     
     #navegacao .menu li a {
@@ -265,8 +280,11 @@
         bottom: 5%;
         right: 3%;
     }
-
     /*----- HOME -----*/
+    #home .wrapper {
+        height: 100vh;
+    }
+
     .sobre__sobre {
         width: 90%;
         margin-inline: auto;
@@ -284,11 +302,20 @@
         gap: 2rem;
     }
 
+    /*----- PROJETOS -----*/
+    #projetos {
+        margin-top: 20rem;
+    }
+    .projetos__imagem {
+        width: 100rem;
+    }
+
 
 }
 
 /*----- MONITORES GRANDES -----*/
-@media screen and (min-width: 1200px) {   
+@media screen and (min-width: 1200px) {  
+
     /*----- GERAL -----*/   
     .wrapper {
         width: min(1200px, 100%);
@@ -298,6 +325,16 @@
     .menu li {
         width: 70%;
     }
+
+    #home .wrapper {
+        height: 100vh;
+    }
+
+    /*----- PROJETOS -----*/
+    #projetos {
+        margin-top: 10rem;
+    }
+
 
 
 }

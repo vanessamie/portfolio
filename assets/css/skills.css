@@ -23,9 +23,10 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     text-align: center;
-    margin: 4rem 0;
+    margin: 5rem 0;
 }
 
 .hard__desenvolvendo {
@@ -41,7 +42,6 @@
 
 /*----- HOBBIES -----*/
 #hobbies {
-    margin-top: var(--nav-height);
     padding: 5rem 1rem;
     display: flex;
     flex-direction: column;

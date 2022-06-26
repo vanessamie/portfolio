@@ -2,8 +2,8 @@
 #projetos {
     width: 80%;
     margin-inline: auto;
-    margin-top: 5rem;
 }
+
 .projetos__projetos {
     display: flex;
     flex-flow: column wrap;
@@ -16,16 +16,17 @@
 }
 
 .projetos__imagem {
-    width: 100%;
+    max-width: 100%;
     margin: 2rem 0;
     box-sizing: border-box;
 }
 
 .projetos__links {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
 
-    margin: 2rem 0;
+    margin: 2rem auto;
 }
 
 #projetos .wrapper > p {
