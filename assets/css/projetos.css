@@ -16,7 +16,7 @@
 }
 
 .projetos__imagem {
-    max-width: 100%;
+    width: 100%;
     margin: 2rem 0;
     box-sizing: border-box;
 }
