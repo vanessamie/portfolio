@@ -1,8 +1,11 @@
 /*----- HARD SKILLS -----*/  
 #hard {
+    height: 100vh;
+    margin-top: var(--nav-height);
+    padding-top: 2rem;
     padding-left: 1rem;
-    margin-top: 10rem;
 } 
+
 .hard__skills h2 {
     margin-top: 3rem;
     text-align: center;
@@ -25,6 +28,12 @@
     margin: 4rem 0;
 }
 
+.hard__desenvolvendo {
+    width: 90%;
+    margin-inline: auto;
+    gap: 3rem;
+}
+
 .hard__desenvolvidas img,
 .hard__desenvolvendo img {
     width: 80px;
@@ -32,11 +41,11 @@
 
 /*----- HOBBIES -----*/
 #hobbies {
-    margin-top: 10rem;
+    margin-top: var(--nav-height);
+    padding: 5rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
     border-radius: 2rem;
 }
 
@@ -60,4 +69,5 @@
 .hobbies__hobbies img {
     width: 40%;
     margin-bottom: 1rem;
+    fill: var(--color);
 }

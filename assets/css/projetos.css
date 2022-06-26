@@ -1,10 +1,4 @@
 /*----- PROJETOS -----*/
-#projetos {
-    width: 100vw;
-    margin-top: var(--nav-height);
-    padding: 0;
-}
-
 #projetos .wrapper {
     width: 90%;
     margin-inline: auto;

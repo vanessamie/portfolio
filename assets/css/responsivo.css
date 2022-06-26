@@ -1,3 +1,5 @@
+
+
 /*----- SMARTPHONE -----*/
 /*----- MENU EXPANSÍVEL -----*/
 @media screen and (max-width: 500px) {
@@ -24,7 +26,6 @@
     .sobre__sobre {
         font-size: 2rem;
         margin-top: 5rem;
-        background: linear-gradient(120deg, var(--nav-bar1), 30%, var(--background));
         padding: 3rem 0;
     }
 
@@ -75,9 +76,13 @@
 
     .sobre__sobre {
         font-size: 2rem;
-        margin-top: 10rem;
-        background: linear-gradient(120deg, var(--nav-bar1), 30%, var(--background));
         padding: 3rem 0;
+    }
+
+    .hard__desenvolvendo {
+        width: 70%;
+        margin-inline: auto;
+        gap: 8rem;
     }
 
     /*----- HOBBIES -----*/
@@ -146,8 +151,17 @@
    
     .sobre__sobre {
         font-size: 2rem;
-        margin-top: 5rem;
-        background: linear-gradient(0deg, var(--nav-bar1), 1%, var(--background));
+    }
+
+    /*----- HARD SKILLS -----*/
+    #hard {
+        height: auto;
+    }
+
+    .hard__desenvolvendo {
+        width: 100%;
+        margin-inline: auto;
+        gap: 1rem;
     }
 
     /*----- HOBBIES -----*/
@@ -167,6 +181,13 @@
 
     .wrapper {
         width: min(992px, 100%);
+    }
+
+    /*----- HARD SKILLS -----*/
+    .hard__desenvolvendo {
+        width: auto;
+        padding: auto;
+        gap: 2rem;
     }
 
     /*----- PROJETOS -----*/   
