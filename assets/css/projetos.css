@@ -1,6 +1,6 @@
 /*----- PROJETOS -----*/
-#projetos .wrapper {
-    width: 90%;
+#projetos {
+    width: 80%;
     margin-inline: auto;
 }
 .projetos__projetos {
@@ -11,11 +11,13 @@
     gap: 3rem;
     margin-top: 3rem;
     line-height: var(--nav-height);
+    box-sizing: border-box;
 }
 
 .projetos__imagem {
-    width: 100%;
+    max-width: 100%;
     margin: 2rem 0;
+    box-sizing: border-box;
 }
 
 .projetos__links {

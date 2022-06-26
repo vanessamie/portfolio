@@ -52,7 +52,8 @@
         bottom: 1%;
         right: 1%;
     }
-    
+
+
 }
 
 @media screen and (min-width: 501px) {
@@ -95,6 +96,7 @@
         bottom: 3%;
         right: 3%;
     }
+
 
     
 } 
@@ -189,11 +191,6 @@
         padding: auto;
         gap: 2rem;
     }
-
-    /*----- PROJETOS -----*/   
-    #projetos .wrapper {
-        width: 80%;
-    }
     
     
 
@@ -273,5 +270,8 @@
         bottom: 5%;
         right: 5%;
     }
+
+
+
 
 }
