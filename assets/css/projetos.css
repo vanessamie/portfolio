@@ -2,6 +2,7 @@
 #projetos {
     width: 80%;
     margin-inline: auto;
+    margin-top: 5rem;
 }
 .projetos__projetos {
     display: flex;

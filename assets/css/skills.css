@@ -4,7 +4,7 @@
     margin-top: var(--nav-height);
     padding-top: 2rem;
     padding-left: 1rem;
-} 
+}
 
 .hard__skills h2 {
     margin-top: 3rem;
@@ -42,7 +42,7 @@
 /*----- HOBBIES -----*/
 #hobbies {
     margin-top: var(--nav-height);
-    padding: 5rem 1rem 1rem;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

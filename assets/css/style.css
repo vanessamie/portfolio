@@ -45,7 +45,10 @@ section {
 
 .nome {
     text-decoration: none;
+}
 
+p {
+    letter-spacing: 0.1rem;
 }
 
 /*----- SOCIAL-LINKS -----*/   
@@ -70,7 +73,7 @@ section {
     width: 35rem;
     height: 7rem;
 
-    margin-top: var(--nav-height);
+    margin-top: 7rem;
     margin-inline: auto;
     padding: 0 1.8rem;
 
