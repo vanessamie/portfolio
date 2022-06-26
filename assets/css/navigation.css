@@ -32,16 +32,14 @@ body.menu-expanded {
 }
 
 body.menu-expanded .menu {
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
-    
-    background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
-
-    height: 100vh;
-
     padding-top: 3rem;
     
+    background: linear-gradient(145deg, var(--nav-bar1), 70%, var(--nav-bar2));
+ 
     transform: translateY(0);
     animation: animate 0.8s alternate-reverse;
 }
@@ -51,7 +49,6 @@ body.menu-expanded .menu {
     transform: translateX(90%);
     }
 }
-
 
 .menu,
 .close-menu,
@@ -102,4 +99,5 @@ body.menu-expanded .close-menu {
 
 .nome {
     color: var(--color);
+    font-size: 2rem;
 }

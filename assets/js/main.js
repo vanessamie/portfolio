@@ -65,7 +65,7 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
-/*ScrollReveal({
+ScrollReveal({
     origin:'top',
     distance: '30px',
     duration: 700,
@@ -76,5 +76,4 @@ function closeMenu() {
 #projetos,
 #formacao,
 #contato
-`)
-*/
+`);

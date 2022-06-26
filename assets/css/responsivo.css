@@ -146,13 +146,6 @@
         visibility: transparent;
     }
 
-    .fa-heart-pulse {
-        background-image: linear-gradient(to right, var(--nav-bar2), var(--nav-bar1));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-    }
-
     .nome {
         font-size: 2rem;
         font-weight: 700;
@@ -251,7 +244,7 @@
     }
     
     #navegacao .menu li a {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-weight: 400;
         color: var(--color);
         display: inline;
@@ -260,12 +253,11 @@
     
     #navegacao .menu li a.active,
     #navegacao .menu li a:hover {
-        background-image: linear-gradient(to left, var(--nav-bar1), var(--color));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        font-size: 2rem;
-        font-weight: 700;
+        color: var(--color);
+        font-size: 4;
+        font-weight: 1000;
+        letter-spacing: 0.3;
+        filter: brightness(1.5);
     }
 
     /*----- BACK TO TOP -----*/ 
@@ -303,13 +295,8 @@
     }
 
     /*----- MENU -----*/
-    #navegacao .wrapper {
-        padding-inline: 15%;
-    }
-
-
     .menu li {
-        width: 60%;
+        width: 70%;
     }
 
 
