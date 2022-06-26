@@ -1,11 +1,11 @@
 /*----- PADRAO -----*/
 :root {
-    --font-family: 'Libre Baskerville', serif;
+    --font-family: 'Alegreya Sans', sans-serif;
     font-size: 62.5%;
 
     --num: 325;
     --background: hsl(var(--num), 100%, 2%);
-    --color: hsl(var(--num), 20%, 67%);
+    --color: hsl(var(--num), 15%, 57%);
     --dark: hsl(var(--num), 23%, 18%);
     --nav-bar1: hsl(277, 85%, 22%);
     --nav-bar2: hsl(167, 81%, 29%);
