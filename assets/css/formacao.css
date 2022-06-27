@@ -1,8 +1,53 @@
 /*----- FORMACAO -----*/
+.formacao__formacao ul,
+.formacao__cursos ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.formacao__formacao ul li,
+.formacao__cursos ul li {
+    line-height: 4rem;
+}
+
 #formacao img {
     width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.formacao__imagem {
+    width: 250px;
+    height: 200px;
+    padding: 2rem 0 0;
+    margin: 3rem auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg, var(--background), 80%, var(--nav-bar1));
+    box-shadow: 10px 10px 50px 0 var(--nav-bar1); 
+}
+
+#formacao .cccinq {
+    width: 15rem;
 }
 
 .resilia {
     background-color: white;
 }
+
+#formacao h2 {
+    font-weight: bold;
+    font-size: 30px;
+
+    margin-top: 5rem;
+}
+
+#formacao p {
+    font-size: 18px;
+}
+
+#formacao .p-titulo {
+    font-size: 25px;
+}
+
