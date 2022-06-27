@@ -46,7 +46,7 @@ body.menu-expanded .menu {
 
 @keyframes animate{
     to{
-    transform: translateX(90%);
+    transform: translateX(100%);
     }
 }
 

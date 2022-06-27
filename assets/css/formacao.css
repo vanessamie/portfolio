@@ -7,7 +7,9 @@
 
 .formacao__formacao ul li,
 .formacao__cursos ul li {
+    width: 300px;
     line-height: 4rem;
+    margin-inline: auto;
 }
 
 #formacao img {
@@ -15,7 +17,8 @@
     margin-bottom: 3rem;
 }
 
-.formacao__imagem {
+.formacao__direita,
+.formacao__esquerda {
     width: 250px;
     height: 200px;
     padding: 2rem 0 0;
@@ -24,8 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, var(--background), 70%, var(--nav-bar1));
-    box-shadow: 10px 10px 50px 0 var(--nav-bar1); 
+    box-shadow: 10px 10px 30px 0 var(--nav-bar1);
+    filter: brightness(0.7);
 }
 
 #formacao .cccinq {
@@ -49,5 +52,6 @@
 
 #formacao .p-titulo {
     font-size: 25px;
+    
 }
 

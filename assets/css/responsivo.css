@@ -70,15 +70,28 @@
         right: 1%;
     }
 
-
+    /*----- FORMACAO -----*/
+    .formacao__direita,
+    .formacao__esquerda {
+        background: linear-gradient(120deg, var(--background), 80%, var(--nav-bar1));
+    }
 
 }
 
 @media screen and (min-width: 501px) {
     body.menu-expanded .menu {
         width: 60%;
-        border-radius: 0 0 0 5rem;
+        border-radius: 0 0 0 10%;
     }
+
+    body.menu-expanded > :not(nav) {
+        visibility: transparent;
+    }
+
+    .menu li {
+        width: 75%;
+    }
+    
     /*----- HOME -----*/
     .sobre__foto {
         width: 25%;
@@ -135,7 +148,20 @@
         margin-top: 10rem;
     }
 
-    
+    /*----- FORMACAO -----*/
+    .formacao__cursos ul,
+    .formacao__formacao ul {
+        width: 90%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-inline: auto;
+    }
+
+
+    .formacao__direita,
+    .formacao__esquerda {
+        background: linear-gradient(120deg, var(--background), 70%, var(--nav-bar1));
+    }
 } 
 
 
@@ -148,6 +174,14 @@
 
     .wrapper {
         width: min(768px, 100%);
+    }
+
+    body.menu-expanded .menu {
+        width: 40%;
+    }
+
+    .menu li {
+        width: 75%;
     }
     
     body.menu-expanded > :not(nav) {
@@ -194,7 +228,29 @@
         margin-top: var(--nav-height);
     }
 
+    /*----- FORMACAO -----*/
+    .formacao__formacao ul,
+    .formacao__cursos  ul{
+        width: 80%;
+        margin-inline: auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
 
+    }
+    .formacao__formacao ul li,
+    .formacao__cursos ul li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacao__esquerda {
+        background: linear-gradient(90deg, var(--background), var(--nav-bar1));
+    }
+
+    .formacao__direita {
+        background: linear-gradient(90deg, var(--nav-bar1), var(--background));
+    }
 
 }
 
@@ -290,6 +346,7 @@
     #hard {
         width: 100%;
         margin-inline: auto;
+        margin-top: 30rem;
     }
 
     .hard__desenvolvendo {
@@ -300,9 +357,34 @@
 
     /*----- PROJETOS -----*/
     #projetos {
-        margin-top: 15rem;
+        margin-top: 30rem;
     }
 
+    /*----- FORMACAO -----*/
+    .formacao__formacao ul,
+    .formacao__cursos ul {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        margin: 5rem 0;
+        padding: 0;      
+    }
+
+    .formacao__formacao ul li,
+    .formacao__cursos ul li {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacao__formacao {
+        width: 100%;
+    }
 
 
 }
@@ -319,18 +401,58 @@
     .menu li {
         width: 70%;
     }
-
+    
     #home .wrapper {
         height: 100vh;
+    }
+
+    /*----- SOBRE -----*/
+    .sobre__sobre p {
+        font-size: 22px;
+    }
+
+    /*----- HARD SKILLS -----*/
+    #hard {
+        margin-top: 30rem;
     }
 
     /*----- PROJETOS -----*/
     #projetos {
         font-size: 25px;
         font-weight: bold;
+        margin-top: 30rem;
     }
 
+    /*----- FORMACAO -----*/
+    #formacao {
+        width: 80%;
+        margin-inline: auto;
+    }
 
+    #formacao .wrapper {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .formacao__formacao ul,
+    .formacao__cursos ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .formacao__formacao ul li,
+    .formacao__cursos ul li {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacao__formacao {
+        margin-top: var(--nav-height);
+    }
 
 
 }
