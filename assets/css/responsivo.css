@@ -300,7 +300,7 @@
 
     /*----- PROJETOS -----*/
     #projetos {
-        margin-top: 20rem;
+        margin-top: 15rem;
     }
 
 
@@ -330,9 +330,7 @@
         font-weight: bold;
     }
 
-    .projetos__links a {
-        font-size: 25px;
-    }
+
 
 
 }
