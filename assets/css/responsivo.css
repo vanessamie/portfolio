@@ -70,10 +70,6 @@
         right: 1%;
     }
 
-    /*----- PROJETOS -----*/
-    .projetos__imagem {
-        width: 100%;
-    }
 
 
 }
@@ -306,9 +302,7 @@
     #projetos {
         margin-top: 20rem;
     }
-    .projetos__imagem {
-        width: 100rem;
-    }
+
 
 
 }
@@ -332,9 +326,13 @@
 
     /*----- PROJETOS -----*/
     #projetos {
-        margin-top: 10rem;
+        font-size: 25px;
+        font-weight: bold;
     }
 
+    .projetos__links a {
+        font-size: 25px;
+    }
 
 
 }

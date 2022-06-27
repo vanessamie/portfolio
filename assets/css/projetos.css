@@ -2,6 +2,7 @@
 #projetos {
     width: 80%;
     margin-inline: auto;
+    font-size: 20px;
 }
 
 .projetos__projetos {
@@ -10,7 +11,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 3rem;
+    margin: var(--nav-height) 0;
     line-height: var(--nav-height);
     box-sizing: border-box;
 }
@@ -22,13 +23,24 @@
 }
 
 .projetos__links {
-    max-width: 100%;
     display: flex;
     justify-content: space-between;
-
-    margin: 2rem auto;
 }
 
-#projetos .wrapper > p {
-    margin: var(--nav-height) 0;
+.projetos__links a {
+    color: var(--color);
+    background-color: var(--background);
+    width: 15rem;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 10px 0 var(--nav-bar1);
+}
+
+.projetos__links a:hover {
+    transform: scale(1.2);
+    filter: brightness(1.3);
+}
+
+#projetos .wrapper p {
+    margin: 1rem auto;
+    width: 80%;
 }
