@@ -343,7 +343,7 @@
     #hard {
         width: 100%;
         margin-inline: auto;
-        margin-top: 30rem;
+        margin-top: 45rem;
     }
 
     .hard__desenvolvendo {
@@ -423,20 +423,21 @@
 
     /*----- HARD SKILLS -----*/
     #hard {
-        margin-top: 30rem;
+        margin-top: 60rem;
     }
 
     /*----- PROJETOS -----*/
     #projetos {
         font-size: 25px;
         font-weight: bold;
-        margin-top: 30rem;
+        margin-top: 40rem;
     }
 
     /*----- FORMACAO -----*/
     #formacao {
         width: 80%;
         margin-inline: auto;
+        padding-top: 10rem;
     }
 
     #formacao .wrapper {
