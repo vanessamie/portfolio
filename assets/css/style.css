@@ -47,7 +47,13 @@ section {
     text-decoration: none;
 }
 
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
 p {
+    font-size: 20px;
     letter-spacing: 0.1rem;
 }
 
@@ -90,7 +96,7 @@ p {
     transform: scale(1.2);
 }
 
-span {
+.span-links {
     position: absolute;
     z-index: 99;
     width: 35rem;

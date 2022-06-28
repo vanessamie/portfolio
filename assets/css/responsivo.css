@@ -42,7 +42,7 @@
         height: 8rem;
     }
 
-    span {
+    .span-links {
         width: 100%;
     }
 
@@ -291,14 +291,14 @@
     
     /*----- MENU -----*/
     #navegacao .wrapper {
-        padding-inline: 10%;
+        padding-inline: 5%;
     }
 
     #navegacao .menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 80%;
+        width: 75%;
     }
 
     #navegacao .wrapper .menu i {
@@ -311,11 +311,11 @@
     }
     
     #navegacao .menu li a {
-        font-size: 2.5rem;
+        font-size: 2.rem;
         font-weight: 400;
         color: var(--color);
         display: inline;
-        padding: 1rem;
+        padding: 0.5rem;
     }
     
     #navegacao .menu li a.active,
@@ -398,6 +398,14 @@
     }
 
     /*----- MENU -----*/
+    #navegacao .wrapper {
+        padding-inline: 10%;
+    }
+
+    #navegacao .menu {
+        width: 80%;
+    }
+
     .menu li {
         width: 70%;
     }
@@ -433,7 +441,7 @@
         width: 100%;
         height: 100vh;
         margin: 0;
-        padding: 0;
+        padding-top: 15rem;
     }
     
     .formacao__formacao ul,

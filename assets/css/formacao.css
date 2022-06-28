@@ -39,19 +39,15 @@
     background-color: white;
 }
 
-#formacao h2 {
-    font-weight: bold;
-    font-size: 30px;
-
-    margin-top: 5rem;
-}
-
-#formacao p {
-    font-size: 18px;
-}
-
 #formacao .p-titulo {
     font-size: 25px;
     
 }
 
+.formacao__formacao h2 {
+    padding-top: 5rem;
+}
+
+.formacao__formacao ul {
+    margin-top: 0;
+}
