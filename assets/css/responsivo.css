@@ -58,7 +58,6 @@
 
     /*----- HOBBIES -----*/
     #hobbies {
-        margin-top: 3rem;
     }
     .hobbies__hobbies li {
         width: 50%;
@@ -355,9 +354,14 @@
         gap: 2rem;
     }
 
+    /*----- HOBBIES -----*/
+    #hobbies {
+        margin-bottom: 5rem;
+    }
+
     /*----- PROJETOS -----*/
     #projetos {
-        margin-top: 30rem;
+        margin-top: 35rem;
     }
 
     /*----- FORMACAO -----*/
