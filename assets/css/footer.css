@@ -1,0 +1,12 @@
+/*----- COPYRIGHT -----*/
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+	background: linear-gradient(180deg, var(--background), 80%, var(--nav-bar1));
+	padding: 2rem 0;
+}
+
+
+
